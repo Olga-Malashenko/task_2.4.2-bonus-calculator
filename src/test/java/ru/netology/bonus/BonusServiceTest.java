@@ -10,7 +10,7 @@ class BonusServiceTest {
     @ParameterizedTest
     @CsvFileSource(resources = "/data.csv")
 
-    void shouldCalculate(String test, long amount, boolean registered, long expected) {
+     void shouldCalculate(String test, long amount, boolean registered, long expected) {
         BonusService service = new BonusService();
 
         // вызываем целевой метод:
